@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+<div class="alert-{{ category }}">
+  {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<!-- Registration form -->
+<h2>Please enter your first and last name:</h2>
+<form action="/regcheck" method="POST" class="form">
+  <div class="flex-row">
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" class="form-control" placeholder="First Name">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="flex-row">
+    <input type="submit" class="btn btn-primary" value="Register">
+  </div>
+</form>
+{% endblock %}

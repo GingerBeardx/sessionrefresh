@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Utility classes */
 body {
   font-family: roboto, sans-serif;
 }
@@ -18,4 +19,50 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: colun;
+}
+
+a {
+  margin: 0.2rem 0;
+}
+
+/* Flash Message styles */
+.alert-success,
+.alert-danger {
+  width: 75%;
+  text-align: center;
+  border-radius: .25rem;
+  padding: .2rem;
+}
+
+.alert-success {
+  background: #8ef69c;
+  color: #034708;
+}
+
+.alert-danger {
+  background: #fa7d7d;
+  color: #380606;
+}
+
+/* Form styles */
+.form-control {
+  padding: .2rem;
+  background: #f1f1f1;
+  border: none;
+  border-bottom: 2px solid burlywood;
+}
+
+.form-control:focus {
+  border: none;
+  background: #f2f2f2;
 }

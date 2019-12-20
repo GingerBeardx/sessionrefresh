@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Session Refresher</title>
-    <link rel="stylesheet" href="../static/style.css">
-  </head>
-
-  <body>
-    <div class="container">
-      <h2>Welcome to your Session refresher</h2>
-      <a href="/login">Log In</a>
-      <a href="/register">Register Your Account</a>
-    </div>
-  </body>
-
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Welcome to your Session refresher</h2>
+<a href="/login">Log In</a>
+<a href="/register">Register Your Account</a>
+{% endblock %}
